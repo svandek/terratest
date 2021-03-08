@@ -1,3 +1,11 @@
+variable "ARM_CLIENT_ID" {
+  type = string
+}
+
+variable "ARM_CLIENT_SECRET" {
+  type = string
+}
+
 terraform {
   backend "azurerm" {
     resource_group_name  = "rg-hello-azure-tf"
