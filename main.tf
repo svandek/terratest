@@ -22,3 +22,8 @@ resource "azurerm_resource_group" "rg-hello-azure2" {
   name     = "rg-hello-azure2"
   location = "westeurope"
 }
+
+resource "azurerm_resource_group" "rg-hello-azure3" {
+  name     = "rg-hello-azure3"
+  location = "westeurope"
+}
