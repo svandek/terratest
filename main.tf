@@ -6,7 +6,7 @@ terraform {
     resource_group_name  = "rg-hello-azure-tf"
     storage_account_name = "sahelloazuretf8765"
     container_name       = "terraform-state"
-    key                  = "terraform.tfstate3"
+    key                  = "${var.region_location}.tfstate"
   }
 }
 
@@ -16,7 +16,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "{{var.region_location}}-rg-hello-azure" {
+resource "azurerm_resource_group" "rg-hello-azure" {
   name     = "rg-hello-azure"
   location = var.region_location
 }
