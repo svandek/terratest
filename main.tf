@@ -16,17 +16,17 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "${var.region_location}-rg1" {
+resource "azurerm_resource_group" "rg1" {
   name     = "${var.region_location}-rg1"
   location = var.region_location
 }
 
-resource "azurerm_resource_group" "${var.region_location}-rg2" {
+resource "azurerm_resource_group" "rg2" {
   name     = "${var.region_location}-rg2"
   location = var.region_location
 }
 
-resource "azurerm_resource_group" "${var.region_location}-rg3" {
+resource "azurerm_resource_group" "rg3" {
   name     = "${var.region_location}-rg3"
   location = var.region_location
 }
