@@ -16,7 +16,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "rg-hello-azure" {
+resource "azurerm_resource_group" "{{var.region_location}}-rg-hello-azure" {
   name     = "rg-hello-azure"
   location = var.region_location
 }
