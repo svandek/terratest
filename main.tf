@@ -6,7 +6,7 @@ terraform {
     resource_group_name  = "terraform-state"
     storage_account_name = "statestorage88"
     container_name       = "tf-state"
-    key                  = "terraform.tfstate3"
+    key                  = "terraform.tfstate"
   }
 }
 
