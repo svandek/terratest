@@ -22,10 +22,10 @@ jobs:
         uses: hashicorp/setup-terraform@v1
 
       - name: Terraform Init
-        run: terraform init
+        run: terraform init -input=false
 
       - name: Terraform Format
         run: terraform fmt
 
       - name: Terraform Plan
-        run: terraform plan
+        run: terraform plan -out=tfplan -var-file=env.tfvars -input=false
