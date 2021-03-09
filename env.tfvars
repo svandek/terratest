@@ -1,3 +1,1 @@
-variable “region_location” {
-default = “westeurope”
-}
+region_location = "westeurope"
