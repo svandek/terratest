@@ -6,7 +6,7 @@ terraform {
     resource_group_name  = "rg-hello-azure-tf"
     storage_account_name = "sahelloazuretf8765"
     container_name       = "terraform-state"
-    key                  = "terraform.tfstate3"
+    key                  = "terraform.tfstate4"
   }
 }
 
