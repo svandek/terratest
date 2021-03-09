@@ -25,4 +25,4 @@ jobs:
         run: terraform init -input=false
 
       - name: Terraform Apply
-        run: terraform apply -lock=false -input=false -var-file=env.tfvars
+        run: terraform apply -lock=false -input=false -var-file=env.tfvars -auto-approve=true
