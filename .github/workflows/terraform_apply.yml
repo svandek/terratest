@@ -24,8 +24,5 @@ jobs:
       - name: Terraform Init
         run: terraform init -input=false
 
-      - name: Terraform Plan
-        run: terraform plan -out=tfplan -var-file=env.tfvars -input=false -lock=false
-
       - name: Terraform Apply
-        run: terraform apply -lock=false -input=false -auto-approve=true
+        run: terraform apply -lock=false -input=false -var-file=env.tfvars
