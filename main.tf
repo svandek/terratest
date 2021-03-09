@@ -1,3 +1,5 @@
+variable region_location {}
+
 
 terraform {
   backend "azurerm" {
