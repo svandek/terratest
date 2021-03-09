@@ -1,1 +1,1 @@
-region_location = "easteurope"
+region_location = "northeurope"
