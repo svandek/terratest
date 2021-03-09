@@ -3,10 +3,10 @@ variable region_location {}
 
 terraform {
   backend "azurerm" {
-    resource_group_name  = "rg-hello-azure-tf"
+    resource_group_name  = "terraform-state"
     storage_account_name = "sahelloazuretf8765"
-    container_name       = "terraform-state"
-    key                  = "terraform.tfstate4"
+    container_name       = "tf-state"
+    key                  = "terraform.tfstate3"
   }
 }
 
