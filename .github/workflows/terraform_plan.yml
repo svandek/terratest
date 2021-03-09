@@ -28,4 +28,4 @@ jobs:
         run: terraform fmt
 
       - name: Terraform Plan
-        run: terraform plan -out=tfplan -var-file=env.tfvars -input=false -lock=false
+        run: terraform plan -out=tfplan -var-file=env.tfvars -input=false
